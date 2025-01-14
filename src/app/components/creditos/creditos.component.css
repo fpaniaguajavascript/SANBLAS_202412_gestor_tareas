@@ -1,0 +1,20 @@
+footer {
+    background-color: #2e8b57; /* Verde medio */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #006400; /* Verde oscuro para el borde superior */
+}
+footer p {
+    margin: 5px 0;
+}
+footer p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+footer p:last-child {
+    font-size: 14px;
+}
+footer p span {
+    color: #98fb98; /* Verde claro para resaltar */
+}
