@@ -1,5 +1,8 @@
 .tarea {
-    border: 2px solid #000;
-    border-radius: 5px;
-    padding: 0.2em 1em 1em 1em;
+    background-color: #f3f0ff; /* Color de fondo suave (lavanda claro) */
+    border-radius: 8px;
+    padding: 15px;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
 }

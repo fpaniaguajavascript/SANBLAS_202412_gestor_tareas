@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Tarea } from '../../classes/tarea';
 
 @Component({
   selector: 'app-ficha-tarea',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './ficha-tarea.component.css'
 })
 export class FichaTareaComponent {
-
+  @Input() tarea : Tarea | undefined;
 }

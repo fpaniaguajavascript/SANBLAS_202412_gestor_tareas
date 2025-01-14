@@ -1,1 +1,24 @@
-<p>principal works!</p>
+<div id="formulario" class="form-container">
+    <div class="form-group">
+        <label for="nombreTarea">Tarea</label>
+        <input id="nombreTarea" type="text" placeholder="Ingrese una tarea" [(ngModel)]="nombreTarea"
+            class="input-field" />
+    </div>
+
+    <div class="form-group">
+        <label for="criticidad">Criticidad</label>
+        <select id="criticidad" [(ngModel)]="criticidad" class="select-field">
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja" selected>Baja</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <button (click)="crear()" class="btn-submit">Crear</button>
+    </div>
+</div>
+<div id="listado-tareas">
+    <app-ficha-tarea *ngFor="let tareaActual of tareas" [tarea]=tareaActual></app-ficha-tarea>
+</div>
+<app-creditos nombre="Fernando" anyo="2025"></app-creditos>
